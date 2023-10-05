@@ -44,6 +44,8 @@ router.get('/new', async (req, res) => {
 // create book route 
 router.post('/', async (req, res) => {
 
+    console.log(req.body);
+
     const book = new Book({
         title: req.body.title,
         author: req.body.author,
