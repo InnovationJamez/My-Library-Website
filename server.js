@@ -40,7 +40,6 @@ app.use('/authors', authorRouter);
 app.use('/books', bookRouter);
 
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app running at http://localhost:${PORT}/`);
 });
