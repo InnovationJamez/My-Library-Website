@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV !== "development"){
+if (process.env.NODE_ENV !== "development") {
     require('dotenv').config();
 }
 
@@ -7,3 +7,4 @@ module.exports = {
     PASSWORD: process.env.DB_PASSWORD,
     DB: process.env.DB_NAME,
 }
+

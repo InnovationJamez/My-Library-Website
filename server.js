@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-const connect = `mongodb+srv://${dbConfig.USER}:${dbConfig.PASSWORD}@${dbConfig.DB}.sv0xg.mongodb.net/?retryWrites=true&w=majority`;
+const connect = `mongodb+srv://${dbConfig.USER}:${dbConfig.PASSWORD}@${dbConfig.DB}.sv0xg.mongodb.net/Library?retryWrites=true&w=majority`;
 
 mongoose.connect(connect, {
     useNewUrlParser: true,
